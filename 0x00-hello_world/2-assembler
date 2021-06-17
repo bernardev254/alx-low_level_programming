@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE > tr 'c' 's' $CFILE
+gcc -c $CFILE -o "tr 'c' 's' $CFILE" 

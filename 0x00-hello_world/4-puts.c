@@ -1,6 +1,6 @@
 #include <stdio.h>
 /** 
-  *runtime start
+ *main-runtime start
 */
 int main(void)
 {

@@ -1,0 +1,1 @@
+This is a directory containing practice code on c a low level programming language

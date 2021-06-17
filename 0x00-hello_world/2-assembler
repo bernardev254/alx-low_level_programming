@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE > sed 's/.c/.s/g' $CFILE
+gcc -S $CFILE -o

@@ -11,10 +11,10 @@ char c;
 float f;
 long int l;
 long long int ll;
-prinff("sixe of a char : %lu.\n",(unsigned long) sixeof(c));
-printf("sixe of an int : %lu.\n",(unsigned long)sixeof(i));
-printf("sixe of a long int: %lu.\n",(unsigned long) sixeof(l));
-printf("sixe of a long long int :%lu.\n",(unsigned long)sixeof (ll));
-printf("sixe of a float :%lu.\n",(unsigned long) sixeof(f));
+printf("size of a char : %lu.\n",(unsigned long)sizeof(c));
+printf("size of an int : %lu.\n",(unsigned long)sixeof(i));
+printf("size of a long int: %lu.\n",(unsigned long)sizeof(l));
+printf("size of a long long int :%lu.\n",(unsigned long)sizeof (ll));
+printf("size of a float :%lu.\n",(unsigned long)sizeof(f));
 return (0);
 }

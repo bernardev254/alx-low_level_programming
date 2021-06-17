@@ -1,8 +1,8 @@
 #include<stdio.h>
-int main()
+int main(void)
 /**
-*main-entry point
-*Return:Always 1(seccess)
+*main - Entry point
+*Return:Always 1(success)
 */
 {
 puts("and that piece of art is useful\" - Dora Korpar, 2015-10-19");

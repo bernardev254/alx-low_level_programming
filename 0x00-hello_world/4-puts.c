@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
 *main-runtime start
-*
 *Return:Always0(success) 
 */
 int main(void)

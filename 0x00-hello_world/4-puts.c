@@ -2,7 +2,7 @@
 /**
 *main-runtime start
 *
-*Return:Always 0 (success) 
+*Return:Always0(success) 
 */
 int main(void)
 {

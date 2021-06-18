@@ -1,6 +1,3 @@
 #!/bin/bash
-<<<<<<< HEAD
-gcc -c $CFILE > main.s
-=======
 gcc -S $CFILE >$CFILES.s
->>>>>>> ade2c215b10a25633dd7a240956327f01670d127
+

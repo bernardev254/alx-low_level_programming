@@ -1,19 +1,18 @@
-#include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
 /**
 *main-Entry point
 *
-*Return:Always0(success)
+*Return:0 for success
 */
 int main(void)
-char ch='z';
-while (ch <='z')
+{
+char ch;
+for (ch = 'a'; ch <= 'z'; ch++)
 {
 putchar(ch);
-ch++;
-} 
+}
+putchar('\n');
 return (0);
 }
-
 
 

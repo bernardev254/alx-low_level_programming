@@ -12,6 +12,7 @@ for (ch = 'a'; ch <= 'z'; ch++)
 while (ch != ('e' || 'q'))
 {
 putchar(ch);
+ch++;
 }
 }
 putchar('\n');

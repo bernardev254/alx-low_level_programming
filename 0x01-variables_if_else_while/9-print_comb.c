@@ -11,7 +11,7 @@ for (ch = '0'; ch <= '9'; ch++)
 {
 putchar(ch);
 putchar(',');
-putchar('\t');
+putchar(' ');
 }
 putchar('\n');
 return (0);

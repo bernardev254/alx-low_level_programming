@@ -12,8 +12,11 @@ for (ch = '0'; ch <= '9'; ch++)
 for (c = '2'; c <= '9'; c++)
 {
 putchar(ch);
+if (c != ch)
+{
 putchar(c);
 putchar(',');
+} 
 }
 }
 putchar('\n');

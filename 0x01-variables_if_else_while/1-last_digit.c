@@ -14,7 +14,7 @@ n=rand()- RAND_MAX/2;
 lastdigit=n%2;
 if(lastdigit>5)
 {
-Printf("Last digit of %d is %d and is grater than 5\n",n,lastdigit);
+printf("Last digit of %d is %d and is grater than 5\n",n,lastdigit);
 }
 else if(n>0 && n<6)
 {

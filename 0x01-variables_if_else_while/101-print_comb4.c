@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-int ch, c;
+int ch, c, a;
 for (ch = '0'; ch <= '9'; ch++)
 {
 for (c = '0'; c <= '9'; c++)

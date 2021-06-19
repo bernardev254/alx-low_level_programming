@@ -18,7 +18,7 @@ lastdigit = (mod * -1);
 }
 else
 {
-mod == lastdigit;
+mod = lastdigit;
 } 
 if(lastdigit > 5)
 {

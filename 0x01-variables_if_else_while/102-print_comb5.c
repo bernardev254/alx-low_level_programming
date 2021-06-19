@@ -17,8 +17,8 @@ for (b = '0'; b <= '9'; b++)
 {
 putchar(ch);
 putchar(c);
-putchar(a)
-putchar(b)
+putchar(a);
+putchar(b);
 putchar(',');
 } 
 } 

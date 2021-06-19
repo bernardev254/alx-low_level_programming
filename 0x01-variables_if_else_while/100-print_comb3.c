@@ -11,8 +11,8 @@ for (ch = '0'; ch <= '9'; ch++)
 {
 for (c = '0'; c <= '9'; c++)
 {
-putchar('ch');
-putchar('c');
+putchar(ch);
+putchar(c);
 putchar(',');
 }
 }

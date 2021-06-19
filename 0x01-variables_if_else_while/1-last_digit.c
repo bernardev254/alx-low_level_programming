@@ -18,9 +18,9 @@ lastdigit = (mod * -1);
 }
 else
 {
-mod = lastdigit;
+mod == lastdigit;
 } 
-if(lastdigit>5)
+if(lastdigit > 5)
 {
 printf("Last digit of %d is %d and is grater than 5\n",n,mod);
 }

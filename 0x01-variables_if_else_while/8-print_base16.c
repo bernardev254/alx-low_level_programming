@@ -14,6 +14,7 @@ putchar(ch);
 for (c = '1'; c <= '9'; c++)
 {
 putchar(c);
+}
 putchar('\n');
 return (0);
 }

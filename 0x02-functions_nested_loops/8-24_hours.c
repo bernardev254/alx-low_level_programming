@@ -1,12 +1,12 @@
 #include "holberton.h"
 /**
-*jack_bauer -  that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
+*jack_bauer -  that prints every minute of the day
 *
 *Returns - void to whoever called the function.
 */
 void jack_bauer(void)
 {
-char a,b,c,d; 
+char a, b, c, d;
 {
 for (a = '0'; a <= '2'; a++)
 {

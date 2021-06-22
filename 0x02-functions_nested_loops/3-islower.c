@@ -6,9 +6,5 @@
 */
 int _islower(int c)
 {
-if (c >= UC('a') && c <= UC('z'))
-{
-return (1);
-}
-return 0;
+return (c >= 'a' && c <= 'z');
 }

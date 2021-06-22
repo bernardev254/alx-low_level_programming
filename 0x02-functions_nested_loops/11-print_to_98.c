@@ -12,7 +12,7 @@ if (i < 98)
 for (i = i; i <= 98; i++)
 putchar(i);
 putchar('\n');
-while (i !== 98)
+while (i != 98)
 {
 putchar(',');
 } 
@@ -27,7 +27,7 @@ for (i = i; i >= 98; i--)
 {
 putchar(i);
 putchar('\n');
-while (i !== 98)
+while (i != 98)
 {
 putchar(',');
 }

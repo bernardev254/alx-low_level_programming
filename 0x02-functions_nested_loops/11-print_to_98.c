@@ -10,18 +10,28 @@ void print_to_98(int i)
 if (i < 98)
 {
 for (i = i; i <= 98; i++)
-printf("%d\n,", i);
-}
-else if (i = 98)
+putchar(i);
+putchar('\n');
+while (i !== 98)
 {
-printf ("%d\n", i);
+putchar(',');
+} 
+}
+else if (i == 98)
+{
+putchar(i);
 }
 else
 {
 for (i = i; i >= 98; i--)
 {
+putchar(i);
+putchar('\n');
 while (i !== 98)
-printf("%d", i);
+{
+putchar(',');
 }
 }
 }
+}
+

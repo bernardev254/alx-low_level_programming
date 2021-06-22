@@ -1,8 +1,20 @@
-#include <unistd.h>
-int main (char ch)
+#include "holberton.h"
+/**
+ *main-runtime start
+ *
+ *return:always0
+ */
+int main()
 {
-  ch='Holberton';
-  -putchar(ch);
-  -putchar(' ');
+  _putchar('H');
+  _putchar('o');
+  _putchar('l');
+  _putchar('b');
+  _putchar('e');
+  _putchar('r');
+  _putchar('t');
+  _putchar('o');
+  _putchar('n');
+  _putchar(' ');
   return (0);
 }

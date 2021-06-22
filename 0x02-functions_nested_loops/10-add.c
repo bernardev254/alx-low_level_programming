@@ -4,7 +4,7 @@
 *
 *Returns the sum of two integers.
 */
-int add(int,int)
+int add(int a,int b)
 {
-return((%d + %d,int,int));
+return((a + b));
 }

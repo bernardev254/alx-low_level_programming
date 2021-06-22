@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
 *_abs - computes absolute value of an integer
-*Return - the absolute value of i.
+*@i:integer
+*Return :- the absolute value of i.
 */
-int _abs(int)
+int _abs(int i)
 {
-  int i;
   return i < 0 ? -i : i;
 }

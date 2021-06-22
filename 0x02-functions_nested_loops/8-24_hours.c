@@ -10,16 +10,18 @@ char a,b,c,d;
 {
 for (a = '0'; a <= '2'; a++)
 {
-for (b = '0'; b <= '2'; b++)
+for (b = '0'; b <= '3'; b++)
 {
-for (c = '0'; c <= '2'; c++)
+for (c = '0'; c <= '5'; c++)
 {
-for (d = '0'; d <= '2'; d++)
+for (d = '0'; d <= '9'; d++)
 {
 _putchar(a);
 _putchar(b);
+_putchar(':');
 _putchar(c);
 _putchar(d);
+_putchar('\n');
 }
 }
 }

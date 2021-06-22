@@ -4,9 +4,8 @@
 *
 *Returns the value of last digit.
 */
-int print_last_digit(int)
+int print_last_digit(int n, last)
 {
-int n,last;
 last = n%10;
 return (last);
 {

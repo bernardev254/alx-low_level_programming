@@ -5,21 +5,21 @@
 *
 *Returns : void.
 */
-void print_to_98(int)
+void print_to_98(int i)
 {
 int i;
 if (i <= 98)
 {
 for (i=i; i >=98; i++)
 {
-printf("%d";,i);
+printf("%d",i);
 }
 }
 else
 {
 for (i=i; i >=98; i++)
 {
-printf("%d";,i);
+printf("%d",i);
 }
 }
 }

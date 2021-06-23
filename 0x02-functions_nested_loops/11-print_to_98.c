@@ -7,31 +7,15 @@
 */
 void print_to_98(int i)
 {
+while (i !=98)
 if (i < 98)
 {
-for (i = i; i <= 98; i++)
-putchar(i);
-putchar('\n');
-while (i != 98)
+printf("%d, ",i);i++;
+}
+else if (n > 98)
 {
-putchar(',');
-} 
-}
-else if (i == 98)
-{
-putchar(i);
-}
-else
-{
-for (i = i; i >= 98; i--)
-{
-putchar(i);
-putchar('\n');
-while (i != 98)
-{
-putchar(',');
+printf("%d, ",i);i--;
 }
 }
+printf("%d\n",i);
 }
-}
-

@@ -5,7 +5,7 @@
 */
 void print_times_table(int n)
 {
-int i , j;
+int i , j, product, first, last;
 if ((n <= 15) && (n >= 0))
 product = (i * j), last = ((i * j) % 10), first = ((i * j) / 10);
 {

@@ -16,7 +16,7 @@ for (j = 0; j <= n; j++)
 product = (i * j);
 last = ((i * j) % 10);
 first = ((i * j) / 10);
-if (product == 0)
+if (j == 0)
 {
 _putchar(product + '0');
 }

@@ -6,8 +6,8 @@
 */
 void print_times_table(int n)
 {
-int i, j;
-while ((n <= 15) && (n >= o))
+int i, j, product, last, first;
+while ((n <= 15) && (n >= 0))
 {
 for (i = 0; i <= n; i++)
 {
@@ -32,6 +32,7 @@ else
 {
 
 _putchar(',');
+_putchar(' ');
 _putchar(' ');
 _putchar(first + '0');
 _putchar(last + '0');

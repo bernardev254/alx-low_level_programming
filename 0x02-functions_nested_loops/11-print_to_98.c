@@ -12,10 +12,10 @@ if (i < 98)
 {
 printf("%d, ",i);i++;
 }
-else if (n > 98)
+else if (i > 98)
 {
 printf("%d, ",i);i--;
 }
 }
-printf("%d\n",i);
+printf("%d \n",i);
 }

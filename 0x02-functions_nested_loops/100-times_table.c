@@ -18,7 +18,7 @@ last = ((i * j) % 10);
 first = ((i * j) / 10);
 if (j == 0)
 {
-_putchar(product + '0');
+_putchar('0');
 }
 else if (product < 10)
 {
@@ -28,7 +28,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar(product);
 }
-else if (product > 10)
+else if (product >= 10)
 {
 
 _putchar(',');

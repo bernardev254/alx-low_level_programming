@@ -1,11 +1,12 @@
 #include "holberton.h"
 /**
 *times_table - prints times table for n.
+*@n:number to print times tsble of.
 *Return: void.
 */
 void print_times_table(int n)
 {
-int i , j, product, first, last;
+int i, j, product, first, last;
 if ((n <= 15) && (n >= 0))
 {
 for (i = 0; i <= n; i++)

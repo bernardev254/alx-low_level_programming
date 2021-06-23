@@ -37,6 +37,14 @@ _putchar(' ');
 _putchar(first + '0');
 _putchar(last + '0');
 }
+else if (product >= 100);
+{
+_putchar(',');
+_putchar(' ');
+_putchar((first / 10) + '0');
+_putchar((first % 10 ) + '0');
+_putchar(last + '0');
+    
 }
 _putchar('\n');
 }

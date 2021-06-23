@@ -13,9 +13,7 @@ for (i = 0; i <= n; i++)
 {
 for (j = 0; j <= n; j++)
 {
-product = (i * j);
-last = ((i * j) % 10);
-first = ((i * j) / 10);
+product = (i * j), last = ((i * j) % 10), first = ((i * j) / 10);
 if (j == 0)
 {
 _putchar('0');
@@ -30,7 +28,6 @@ _putchar(product + '0');
 }
 else if ((product >= 10) && (product < 100))
 {
-
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
@@ -42,8 +39,8 @@ else if (product >= 100)
 _putchar(',');
 _putchar(' ');
 _putchar((first / 10) + '0');
-_putchar((first % 10 ) + '0');
-_putchar(last + '0');    
+_putchar((first % 10) + '0');
+_putchar(last + '0');
 }
 }
 _putchar('\n');

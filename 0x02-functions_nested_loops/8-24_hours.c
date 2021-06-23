@@ -6,32 +6,17 @@
 */
 void jack_bauer(void)
 {
-char a, b, c, d;
+int a, b;
 {
-for (a = '0'; a <= '2'; a++)
+for (a = '0'; a < '24'; a++)
 {
-for (b = '0'; b <= '3'; b++)
-{
-for (c = '0'; c <= '5'; c++)
-{
-for (d = '0'; d <= '9'; d++)
+for (b = '0'; b <= '59'; b++)
 {
 _putchar(a);
-_putchar(b);
 _putchar(':');
-_putchar(c);
-_putchar(d);
-if ((a == '2') && (b == '3') && (c == '5') && (d == '9'))
-{
-}
-else
-{
+_putchar(b);
 _putchar('\n');
 }
 }
 }
 }
-}
-}
-}
-

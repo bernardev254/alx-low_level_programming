@@ -21,12 +21,17 @@ _putchar(b);
 _putchar(':');
 _putchar(c);
 _putchar(d);
+if ((a = 2) && (b = 4) && (c = '5') && (d = '9'))
+{
+}
+else
+{
 _putchar('\n');
 }
 }
 }
 }
 }
-_putchar('\n');
+}
 }
 

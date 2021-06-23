@@ -20,5 +20,3 @@ printf("%d, ",i);i--;
 }
 printf("%d\n",i);
 }
-}
-}

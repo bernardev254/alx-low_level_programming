@@ -38,5 +38,7 @@ _putchar(first + '0');
 _putchar(last + '0');
 }
 }
+}
 _putchar('\n');
+}
 }

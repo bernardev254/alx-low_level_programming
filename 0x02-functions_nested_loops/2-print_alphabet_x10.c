@@ -10,7 +10,7 @@ int i;
 for (i = 0; i<= 9; i++)
 {
 char ch;
-for (ch = 'a' ; ch <= 'z'; ch++)
+for (ch = 97 ; ch <= 122; ch++)
 {
 _putchar(ch);
 }

@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
 *print_diagonal - prints a diagonal.
-*@n: diagonal dimension
+*@n: diagonal  length dimension
 *Return:void.
 */
 void print_diagonal(int n)

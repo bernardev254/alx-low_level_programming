@@ -2,7 +2,7 @@
 /**
  *more_numbers - prints numbers 1-14 10x.
  *
- *return:void
+ *Return:returnd void
  */
 void more_numbers(void)
 {

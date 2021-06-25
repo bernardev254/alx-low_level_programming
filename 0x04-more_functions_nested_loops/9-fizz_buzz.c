@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 *main - prints  numbers 1-100 with exception of multiples of 3 & 5.
-*
+*@void:parameterless
 *Return:1 on success.
 */
 int main(void)

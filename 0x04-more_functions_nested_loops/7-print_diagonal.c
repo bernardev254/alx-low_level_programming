@@ -1,4 +1,4 @@
-#include "holbeton.h"
+#include "holberton.h"
 
 /**
  * print_diagonal - prints a diagonal

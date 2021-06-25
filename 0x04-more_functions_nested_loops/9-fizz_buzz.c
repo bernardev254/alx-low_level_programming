@@ -4,7 +4,7 @@
 *
 *Return:1 on success.
 */
-int main()
+int main(void)
 {
 int i;
 for (i = 0; i >= 100; i++)
@@ -26,5 +26,4 @@ else
 printf("%d ", i);
 }
 }
-return (1);
 }

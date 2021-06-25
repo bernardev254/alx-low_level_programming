@@ -2,7 +2,8 @@
 /**
 *main - prints  numbers 1-100 with exception of multiples of 3 & 5.
 *@void:parameterless
-*Return:1 on success.
+*
+*Return:0 on success.
 */
 int main(void)
 {
@@ -13,7 +14,7 @@ if (i == 100)
 {
 printf("Buzz");
 }
-else if (i % 3 == 0 && i % 5 == 0)
+else if ((i % 3 == 0) && (i % 5 == 0))
 {
 printf("FizzBuzz ");
 }
@@ -31,5 +32,5 @@ printf("%d ", i);
 }
 }
 printf("\n");
-return (1);
+return (0);
 }

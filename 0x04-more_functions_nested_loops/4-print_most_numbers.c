@@ -2,7 +2,7 @@
 /**
  *print_most_numbers - prints natural numbers with excluding 2 & 4.
  *
- *return: returns void
+ *Return: returns void
  */
 void print_most_numbers(void)
 {

@@ -2,7 +2,7 @@
 /**
 *_isdigit - a function that checks for digits.
 *@c:charcter to be checked.
-*Return : 1 if digit 0 otherwise.
+*Return:returns 1 if digit 0 otherwise.
 */
 int _isdigit(int c)
 {

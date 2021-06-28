@@ -1,0 +1,1 @@
+This is a dir on **pointers,arrays and strings** in *c*.

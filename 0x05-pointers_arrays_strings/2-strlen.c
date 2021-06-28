@@ -2,16 +2,19 @@
 
 /**
  *_strlen - returns the length of a string
- *@c: pointer
+ *@s: pointer
  *
  *Return:length of a string.
  */
 
 int _strlen(char *s)
 {
-char str[];
-for (s = str; *s; s++)
+char *ptr;
+for (ptr = s; ptr != 0; ptr++)
 {
-return (s - str);
+if (ptr == '\n')
+{
+return (ptr - s);
+}
 }
 }

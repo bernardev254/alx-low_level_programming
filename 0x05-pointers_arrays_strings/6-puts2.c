@@ -10,7 +10,7 @@
 void puts2(char *s)
 {
 int length = 0;
- _putchar(*s);
+_putchar(*s);
 while (*s != '\0')
 {
 s++;
@@ -18,5 +18,4 @@ if ((length % 2) != 0)
 _putchar(*s);
 length++;
 }
-_putchar('\n');
 }

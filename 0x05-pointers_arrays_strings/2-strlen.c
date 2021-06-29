@@ -9,19 +9,12 @@
 
 int _strlen(char *s)
 {
-char *ptr;
 int length;
-if (s == "")
+  
+while (*s != '\0')
 {
-length = 0;
-}
-else
-{
-for (ptr = s; *ptr; ++ptr)
-{
-length = ((ptr - s) + 1);
-}
+length++;
+s++;
 }
 return (length);
-_putchar('\n');
 }

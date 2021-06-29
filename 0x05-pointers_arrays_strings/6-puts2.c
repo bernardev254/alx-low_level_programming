@@ -13,8 +13,9 @@ int length = 0;
 while (*s != '\0')
 {
 s++;
-length++;
 if ((length % 2) == 0)
 _putchar(*s);
+length++;
 }
+_putchar('\n');
 }

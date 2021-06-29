@@ -1,17 +1,18 @@
 #include "holberton.h"
-#include <stddef.h>
 
 /**
 *print_rev - prints a string followed by a new line.
-*@str:pointer
+*@s:pointer
 *
 *return:void
 */
 
-void print_rev(char *str)
+void print_rev(char *s)
 {
-char *ptr;
-for (*ptr = '\0'; *ptr = *str; *ptr--)
+char *ptr = s;
+  while (*ptr <= '\0')
+    ptr++;
+for ( ; *ptr = *s; *ptr--)
 }
 _putchar(*ptr);
 }

@@ -10,9 +10,10 @@
 void print_rev(char *s)
 {
 char *ptr = s;
-  while (*ptr <= '\0')
-    ptr++;
+while (*ptr <= '\0')
+ptr++;
 for ( ; *ptr >= *s; ptr--)
-}
+{
 _putchar(*ptr);
+}
 }

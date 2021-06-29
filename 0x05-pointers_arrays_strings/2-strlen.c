@@ -13,7 +13,7 @@ char *ptr;
 int length;
 for (ptr = s; *ptr; ++ptr)
 {
-length = (ptr - s);
+length = ((ptr - s) + 1);
 }
 return (length);
 _putchar('\n');

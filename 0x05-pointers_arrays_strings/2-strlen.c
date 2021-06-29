@@ -10,11 +10,9 @@
 int _strlen(char *s)
 {
 char *ptr;
-long int *longword;
 int length;
-for (ptr = s; ((long int) ptr && (sizeof(longword) - 1)) != 0; ++ptr)
+for (ptr = s; *ptr; ++ptr)
 {
-if (*ptr == '\0')
 length = (ptr - s);
 }
 return (length);

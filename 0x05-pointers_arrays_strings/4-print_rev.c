@@ -11,7 +11,8 @@ void print_rev(char *str)
 {
 while (str && *str)
 {
-_putchar(*str--);
+if (*str == '\0')
+_putchar(--*str);
 }
 _putchar('\n');
 }

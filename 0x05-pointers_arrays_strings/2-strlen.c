@@ -16,4 +16,5 @@ for (ptr = s; *ptr; ++ptr)
 length = (ptr - s);
 }
 return (length);
+_putchar('\n');
 }

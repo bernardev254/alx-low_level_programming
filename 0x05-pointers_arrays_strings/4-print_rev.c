@@ -9,10 +9,20 @@
 
 void print_rev(char *str)
 {
-while (str && *str)
+int i;
+int len = 0;
+char c;
+if (! str)
+return NULL;
+while (str[len]! = '\0')
 {
-if (*str == '\0')
-_putchar(*str);
+len++;
 }
-_putchar('\n');
+for (i = 0; i < (len/2); i++)
+{
+c = str[i];
+str[i] = str[len - i - 1];
+str[len - i - 1] = c÷
+}
+return str;
 }

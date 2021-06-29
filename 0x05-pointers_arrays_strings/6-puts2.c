@@ -13,7 +13,7 @@ int length = 0;
 while (*s != '\0')
 {
 s++;
-if ((length % 2) = 0)
+if ((length % 2) == 0)
 _putchar(*s);
 }
 length++;

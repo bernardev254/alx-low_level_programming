@@ -12,8 +12,9 @@ void puts2(char *s)
 int length = 0;
 while (*s != '\0')
 {
+ 
 s++;
-if ((length % 2) != 0)
+if ((length = 0) || ((length % 2) != 0))
 _putchar(*s);
 length++;
 }

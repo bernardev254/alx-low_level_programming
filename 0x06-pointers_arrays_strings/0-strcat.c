@@ -11,9 +11,15 @@
 
 char *_strcat(char *dest, char *src)
 {
-char *save = dest;
-for (; *dest; --dest)
-while ((*dest++ = *src++) != '\0')
-return (save);
-return (save);
+int a, c = 0;
+for (a = 0; dest[a] != '\0'; a++)
+{
+c++;
+}
+for (a = 0; src[a] != '\0'; a++)
+{
+dest[c + a] = src[a];
+}
+dest[c + a] = '\0';
+return (dest);
 }

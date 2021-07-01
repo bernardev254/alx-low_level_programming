@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- *_strncpy - ccopies a string.
+ *_strncpy - copies a string.
  *@dest: pointer param.
  *@src: pointer param.
  *@n:int n.
@@ -16,9 +16,11 @@ char *start = dest;
 if ((dest == NULL) && (src == NULL))
 return (NULL);
 while (*src && n--)
+{
 *dest = *src;
 dest++;
 src++;
 *dest = '\0';
+}
 return (start);
 }

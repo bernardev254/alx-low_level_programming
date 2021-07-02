@@ -18,7 +18,7 @@ n = length / 2;
 }
 else
 {
-n = (length + 1) / 2;  
+n = (length + 1) / 2;
 }
 for (i = n; i < length; i++)
 {

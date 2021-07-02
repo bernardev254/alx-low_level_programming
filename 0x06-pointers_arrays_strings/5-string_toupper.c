@@ -4,11 +4,10 @@
 /**
  *string_toupper - converts a string to uppercase.
  *@str: pointer to string param.
- *
  *Return:pointer to uppercased string.
  */
 
-char *srting_toupper(char *str)
+char *string_toupper(char *str)
 {
 int i;
 for (i = 0; str[i] != '\0'; i++)

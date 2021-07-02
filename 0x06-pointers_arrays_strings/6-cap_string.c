@@ -23,7 +23,7 @@ str[i] = str[i] - 32;
 }
 else if (*(str + i) == btn[j] || *(str + i) == '\n')
 {
-i++;
+++i;
 if (str[i] >= 'a' && str[i] <= 'z')
 {
 str[i] = str[i] - 32;

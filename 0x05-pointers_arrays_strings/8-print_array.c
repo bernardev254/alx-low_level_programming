@@ -10,11 +10,9 @@
 void print_array(int *a, int n)
 {
 int i;
-_putchar(a[0]);
+printf("%d",a[0]);
 for (i = 1; i < n; i++)
 {
-_putchar(',');
-_putchar(' ');
-_putchar(a[i]);
+printf(", %d",a[i]);
 }
 }

@@ -2,6 +2,7 @@
  /**
  *print_array - prints an array.
  *@a:pointer to the array.
+ *@n: number of elements of the array
  *
  *Return:void
  */

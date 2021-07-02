@@ -15,5 +15,5 @@ _putchar(*s);
 s++;
 s++;
 }
-_putchar(/n);
+_putchar('/n');
 }

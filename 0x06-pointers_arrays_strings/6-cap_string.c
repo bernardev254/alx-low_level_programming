@@ -9,7 +9,7 @@
 char *cap_string(char *str)
 {
 int i, j;
-char *btn = ",\n:.!?\"(){}\t[]";
+char btn[] = ", \ n : . ! ?  \" ( ) { } \t";
 for (i = 0; str[i] != '\0'; i++)
 {
 for (j = 0; btn[j] != '\0'; j++)

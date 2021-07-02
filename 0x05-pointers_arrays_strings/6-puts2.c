@@ -9,7 +9,6 @@
 
 void puts2(char *s)
 {
-int length = 0;
 while (*s != '\0')
 {
 s++;

@@ -12,15 +12,14 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-if ((dest == NULL) && (src == NULL))
-return (NULL);
-char *start = dest;
-while (*src && n--)
+int i;
+for (i = 0; i < n && *(src + i) !='\0'; i++)
 {
-*dest = *src;
-dest++;
-src++;
-*dest = '\0';
+*(dest + i) = *(src + i);
 }
-return (start);
+for (; i < n; i++)
+{
+*(dest + i) = '\0';
+}
+return (dest);
 }

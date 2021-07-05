@@ -28,11 +28,11 @@ flag = 1;
 }
 if (flag == 1)
 {
-return &s[pos];
+return (&s[pos]);
 }
 else
 {
-return NULL;
+return (NULL);
 }
 }
-}
+

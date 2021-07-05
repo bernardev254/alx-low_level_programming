@@ -14,7 +14,7 @@ while (*ptr != '\0')
 {
 if (*ptr == c)
 {
-*ptr = c}
+*ptr = c;
 }
 return (s);
 }

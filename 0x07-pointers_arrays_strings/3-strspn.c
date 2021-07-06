@@ -19,7 +19,7 @@ while (*s)
 {
 for (a = 0; accept[a] != '\0'; a++)
 {
-if (accept[a] == *s)
+if (accept[a] == *s++)
 {
 n++;
 break;

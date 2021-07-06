@@ -9,12 +9,12 @@
 
 char *_strchr(char *s, char c)
 {
-char *ptr = s;
-while (*ptr >= '\0')
+int a;
+for (a = 0;s[a] >= '\0';a++)
 {
-if (*ptr == c)
+if (s[a] == c)
 {
-return (*ptr);
+return (s + a);
 }
 }
 return ('\0');

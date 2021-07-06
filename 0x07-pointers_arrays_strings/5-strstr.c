@@ -23,6 +23,6 @@ if (!*t)
 return (s);
 }
 haystack = s + 1;
-} 
+}
 return ('\0');
 }

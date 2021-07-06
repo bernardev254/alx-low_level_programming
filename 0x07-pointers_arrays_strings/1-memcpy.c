@@ -2,7 +2,7 @@
 /**
  *_memcpy - copies memory area
  *@dest:pointer to mem location
- *@src:pointer to source 
+ *@src:pointer to source
  *@n:number of to copy
  *
  *Return:pointer

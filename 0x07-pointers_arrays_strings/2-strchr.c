@@ -11,11 +11,8 @@ char *_strchr(char *s, char c)
 {
 char *ptr = s;
 while (*ptr != '\0')
-{
 if (*ptr == c)
-{
-*ptr = c;
+return ((char *)s);
+return (NULL);
 }
-}
-return (s);
-}
+

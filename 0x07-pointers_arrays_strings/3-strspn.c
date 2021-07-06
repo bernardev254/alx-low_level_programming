@@ -9,9 +9,25 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-if (accept[0] == '\n')
-return (0);
-char *ptr = s;
-for (; *s == accept; s++)
-return (s - ptr);
+unsigned int n = 0;
+int a;
+if (!(*s) || !(*accept))
+{
+return (n);
+}
+while (*s)
+{
+for (a = 0; accept[a]!='\0'; a++)
+{
+if (accept[a] == *s)
+{
+n++;
+break;
+}
+else if (accept[a + 1] == '\n')
+return (n);
+}
+s++;
+}
+return (n);
 }

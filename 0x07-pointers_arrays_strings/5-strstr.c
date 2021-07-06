@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *_strpbrk - scans a string and returns the address
+ *_strstr - scans a string and returns the address
  *@s:pointer to mem location
  *@accept:pointer to string
  *

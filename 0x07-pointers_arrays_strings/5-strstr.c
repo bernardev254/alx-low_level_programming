@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- *_strstr - scans a string and returns the address
+ *_strstr - locates a substring
  *@s:pointer to mem location
  *@accept:pointer to string
  *
- *Return:no of bytes from the source substring
+ *Return:pointer to the beginning of a substring
  */
 
 char *_strstr(char *haystack, char *needle)
@@ -18,7 +18,7 @@ while (*haystack && *t && (*haystack = *t))
 haystack++;
 t++;
 }
-if (! *t)
+if (!*t)
 {
 return (s);
 }

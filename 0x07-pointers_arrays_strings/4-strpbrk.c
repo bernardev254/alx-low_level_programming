@@ -9,30 +9,19 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-int i, j, pos, flag = 0;
-for (i = 0; s[i] != '\0';i++);
-pos = i;
-for (i = 0;accept[i] != '\0';i++)
+int i;
+while (*s)
 {
-for (j = 0;s[j] != '\0';j++)
+for (i = 0; accept[i] != '\0';  i++)
 {
-if (accept[i] == s[j])
+if (*s == accept[i])
 {
-if (j <= pos)
-{
-pos = j;    
-flag = 1;    
+return (s);
+} 
+} 
+s++;
+} 
+return ('\0');
 }
-}
-}        
-}
-if (flag == 1)
-{
-return (&s[pos]);
-}
-else
-{
-return (NULL);
-}
-}
+
 

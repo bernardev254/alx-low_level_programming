@@ -1,5 +1,19 @@
 #include "holberton.h"
-#include <math.h>
+/**
+*func - returns sqrt
+*@root:int
+*@square:int
+*
+*Return:int
+*/
+int func(int root, int square)
+{
+if (root * root == square)
+return (root);
+if (root > square)
+return (-1);
+return (func(root + 1, square)
+}
 
 /**
  *_sqtr_recursion -prints natural sqrt.
@@ -9,5 +23,5 @@
  */
 int _sqtr_recursion(int n)
 {
-return (pow(2, 0.5 * log2(n)));
+return (func(0, n));
 }

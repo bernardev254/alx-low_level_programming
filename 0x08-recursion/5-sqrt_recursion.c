@@ -8,5 +8,5 @@
  *Return:sqrt of n.
  */
 {
-return (pow(2, 0.5 * log2(n));
+return (pow(2, 0.5 * log2(n)));
 }

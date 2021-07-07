@@ -1,4 +1,5 @@
 #include "holberton.h"
+int _sqtr_recursion(int n);
 /**
 *func - returns sqrt
 *@root:int

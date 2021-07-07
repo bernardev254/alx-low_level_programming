@@ -7,6 +7,7 @@
  *
  *Return:sqrt of n.
  */
+int _sqtr_recursion(int n)
 {
 return (pow(2, 0.5 * log2(n)));
 }

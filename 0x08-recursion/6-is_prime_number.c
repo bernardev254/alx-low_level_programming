@@ -14,6 +14,8 @@ if (n <= 2)
 return (n == 2);
 if (n % i == 0)
 return (0);
+if (n % i != 0)
+return (1);
 i++;
 return (is_prime_number(n));
 }

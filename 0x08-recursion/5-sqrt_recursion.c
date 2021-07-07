@@ -1,11 +1,5 @@
 #include "holberton.h"
-
-/**
- *_sqtr_recursion -prints natural sqrt.
- *@n:integer to compute its sqtr.
- *
- *Return:sqrt of n.
- */
+#include <math.h>
 
 int _sqtr_recursion(int n)
 {
@@ -27,6 +21,12 @@ return (x * _pow_recursion(x, y / 2) * _pow_recursion(x, y / 2));
 else
 return (_pow_recursion(x, y / 2) * _pow_recursion(x, y / 2));
 }
+/**
+ *_sqtr_recursion -prints natural sqrt.
+ *@n:integer to compute its sqtr.
+ *
+ *Return:sqrt of n.
+ */
 {
 return (_pow(2, 0.5 * log2(n));
 }

@@ -6,3 +6,4 @@ int factorial(int n);
 int _pow_recursion(int x, int y);
 int is_prime_number(int n);
 int func(int root, int square);
+int _sqtr_recursion(int n);

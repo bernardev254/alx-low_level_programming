@@ -13,6 +13,6 @@ if (*s != '\0')
 {
 s++;
 n++;
-return (n + _strlen_recursion(s));
 }
+return (n + _strlen_recursion(s));
 }

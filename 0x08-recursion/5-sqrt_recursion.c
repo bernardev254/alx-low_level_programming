@@ -7,13 +7,8 @@
  *Return:sqrt of n.
  */
 
-int sqtr_recursion(int n)
+int _sqtr_recursion(int n)
+
 {
-if (n == 0)
-return (1);
-else if (n < 0)
-return (-1);
-{
-return (n * factorial(n - 1));
-}
+return (_pow(2, 0.5 * log2(n));
 }

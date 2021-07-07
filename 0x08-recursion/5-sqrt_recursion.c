@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *sqtr_recursion -prints natural sqrt.
+ *_sqtr_recursion -prints natural sqrt.
  *@n:integer to compute its sqtr.
  *
  *Return:sqrt of n.

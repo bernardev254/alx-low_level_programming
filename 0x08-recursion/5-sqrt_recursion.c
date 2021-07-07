@@ -12,7 +12,7 @@ if (root * root == square)
 return (root);
 if (root > square)
 return (-1);
-return (func(root + 1, square)
+return (func(root + 1, square));
 }
 
 /**

@@ -15,5 +15,5 @@ return (1);
 else if (y % 2 != 0)
 return (x * pow_recursion(x, y/2) * pow_recursion(x, y/2));
 else
-return (pow_recursion(x, y/2) * pow_recursion(x, y/2);
+return (pow_recursion(x, y/2) * pow_recursion(x, y/2));
 }

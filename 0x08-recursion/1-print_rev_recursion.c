@@ -12,9 +12,9 @@ char *a = s;
 *a = '\0';
 if (*a != *s)
 {
-_putchar(*s);
+_putchar(*a);
 a--;
-_print_rev_recursion(s);
+_print_rev_recursion(a);
 }
 else
 {

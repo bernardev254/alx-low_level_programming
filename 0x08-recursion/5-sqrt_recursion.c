@@ -1,5 +1,5 @@
 #include "holberton.h"
-int _sqtr_recursion(int n);
+int _sqrt_recursion(int n);
 /**
 *func - returns sqrt
 *@root:int
@@ -22,7 +22,7 @@ return (func(root + 1, square));
  *
  *Return:sqrt of n.
  */
-int _sqtr_recursion(int n)
+int _sqrt_recursion(int n)
 {
 return (func(0, n));
 }

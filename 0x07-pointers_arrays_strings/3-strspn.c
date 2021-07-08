@@ -10,21 +10,21 @@
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int n = 0;
-int a;
+int a, b;
 if (!(*s) || !(*accept))
 {
 return (n);
 }
 while (*s)
 {
-for (a = 0; accept[a] != '\0'; a++)
+for (b = 0; accept[a] != '\0'; b++)
 {
-if (accept[a] == *s++)
+if (accept[b] == *s)
 {
 n++;
 break;
 }
-else if (accept[a + 1] == '\n')
+else if (accept[b + 1] == '\0')
 return (n);
 }
 s++;

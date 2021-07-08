@@ -10,7 +10,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int n = 0;
-int a, b;
+int b;
 if (!(*s) || !(*accept))
 {
 return (n);

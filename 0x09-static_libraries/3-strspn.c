@@ -17,7 +17,7 @@ return (n);
 }
 while (*s)
 {
-for (b = 0; accept[a] != '\0'; b++)
+for (b = 0; accept[b] != '\0'; b++)
 {
 if (accept[b] == *s)
 {

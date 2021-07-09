@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  *_strstr - locates a substring
- *@s:pointer to mem location
- *@accept:pointer to string
+ *@haystack:pointer to mem location
+ *@needle:pointer to string
  *
  *Return:pointer to the beginning of a substring
  */

@@ -19,7 +19,7 @@ printf("%d", sum);
 sum = 0;
 for (j = 0; j < size; j++)
 {
-sum = sum + *(a + size *(j + 1) - (j + 1);
+sum = sum + *(a + size *(j + 1) - (j + 1));
 }
 printf("%d\n", sum);
 }

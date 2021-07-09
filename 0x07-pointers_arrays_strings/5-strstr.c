@@ -13,7 +13,7 @@ while (*haystack)
 {
 char *s = haystack;
 char *t = needle;
-while (*haystack && *t && (*haystack = *t))
+while (*haystack && *t && (*haystack == *t))
 {
 haystack++;
 t++;

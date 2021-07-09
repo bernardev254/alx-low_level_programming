@@ -15,7 +15,7 @@ for (i = 0; i < size;  i++)
 {
 sum += *(a + i * size + i);
 }
-printf("%d", sum);
+printf("%d, ", sum);
 sum = 0;
 for (j = 0; j < size; j++)
 {

@@ -9,5 +9,6 @@
 int _atoi(char *s)
 {
 if (*s)
+_putchar(s[0]);
 return (1);
 }

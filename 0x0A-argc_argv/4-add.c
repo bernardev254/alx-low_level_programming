@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
- * main - writes the character c to stdout
+ * main - sum of arguments
  * @argc: arguments count
  *@argv:arguments vector
  *

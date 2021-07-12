@@ -9,8 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-int a = argc;
-_putchar('a');
+_putchar('argc');
 _putchar('\n');
 return (0);
 }

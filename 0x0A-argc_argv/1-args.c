@@ -1,4 +1,6 @@
-#include "holberton.h"
+#include <stdlib.h>
+#include <stdio.h>
+#define UNUSED(**argv) void(**argv)
 
 /**
  * main - prints the number of arguments passed to it.
@@ -9,7 +11,6 @@
  */
 int main(int argc, char **argv)
 {
-_putchar('argc');
-_putchar('\n');
+printf("%d\n", argc);
 return (0);
 }

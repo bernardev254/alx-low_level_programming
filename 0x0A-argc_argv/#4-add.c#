@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * main - writes the character c to stdout
@@ -16,7 +17,7 @@ if (argc > 1)
 {
 for (i = 1; i < argc; i++)
 {
-for (j = 0; j < strlen(argv[i][j]); j++)
+for (j = 1; j <= strlen(argv[j]); j++)
 {
 if (atoi(argv[i][j]) >= 0 && atoi(argv[i][j]) <= 9)
 {

@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#define UNUSED(**argv) void(**argv)
 
 /**
  * main - prints the number of arguments passed to it.

@@ -3,7 +3,7 @@
 /**
  * main - writes the character c to stdout
  * @argc: arguments count
- *@argv:arguments vector 
+ *@argv:arguments vector
  *
  * Return: On success 0.
  */

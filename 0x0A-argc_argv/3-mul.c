@@ -3,7 +3,7 @@
 /**
  * main - multiplies two numbers
  * @argc: arguments count
- *@argv:arguments vector 
+ *@argv:arguments vector
  *
  * Return: On success 0
  */

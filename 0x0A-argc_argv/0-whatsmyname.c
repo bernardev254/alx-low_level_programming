@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - writes the character c to stdout
+ * main - prints argv[0]
  * @argc: arguments count
  *@argv:arguments vector
  *
@@ -9,8 +9,8 @@
  */
 int main(int argc, char **argv)
 {
-char *s = **argv;
-while (*s != '\0')
+char *s = argv;
+while (*s != '\0' && argc > 0)
 {
 _putchar(*s);
 s++;

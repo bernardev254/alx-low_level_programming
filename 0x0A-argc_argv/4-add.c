@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - writes the character c to stdout
@@ -16,17 +17,18 @@ if (argc > 1)
 {
 for (i = 1; i < argc; i++)
 {
-if (!(argv[i] >= '0' && argv[i] <= 9))
+if (!(atoi(*(argv + i)) >= '0' && atoi(*(argv + i)) <= '9'))
 {
-_putchar(s);
+printf("%s", s);
 return (1);
 }
 else
 {
-sum += atoi argv[i];
+sum += atoi(argv[i]);
+printf("%d\n", sum);
 }
-_putchar('\n');
 }
+printf("0\n");
 }
 return (0);
 }

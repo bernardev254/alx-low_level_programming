@@ -1,5 +1,5 @@
-#include "holberton.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * main - multiplies two numbers
  * @argc: arguments count
@@ -11,18 +11,15 @@ int main(int argc, char **argv)
 {
 char *s = "Error";
 int result = 0;
-int a = argv[1];
-int b = argv[2];
 if (argc == 3)
 {
-result = a * b;
-_putchar('result');
+result = atoi(argv[1]) * atoi(argv[2]);
+printf("%d\n", result);
 }
 else
 {
-_putchar(s);
+printf("%s\n", s);
 return (1);
 }
-_putchar('\n');
 return (0);
 }

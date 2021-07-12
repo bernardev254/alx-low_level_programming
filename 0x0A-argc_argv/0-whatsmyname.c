@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
  * main - prints argv[0]
@@ -9,12 +9,6 @@
  */
 int main(int argc, char **argv)
 {
-char *s = *argv;
-while (*s != '\0' && argc > 0)
-{
-_putchar(*s);
-s++;
-}
-_putchar('\n');
-return (1);
+void argc;
+printf("%s\n", argv[0]);
 }

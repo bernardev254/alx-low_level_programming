@@ -6,9 +6,9 @@
  * @argc: arguments count
  *@argv:arguments vector
  *
- * Return: On success 1.
+ * Return: void.
  */
-int main(int argc, char **argv)
+void main(int argc, char **argv)
 {
 if (argc > 0)
 printf("%s\n", argv[0]);

@@ -21,7 +21,7 @@ for (j = 0; argv[i][j] != '\0'; j++)
 {
 if (argv[i][j] >= '0' && argv[i][j] <= '9')
 {
-sum += atoi(argv[i]);
+sum += atoi(argv[i][j]);
 printf("%d\n", sum);
 return (1);
 }

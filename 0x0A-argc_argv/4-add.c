@@ -17,11 +17,11 @@ if (argc > 1)
 {
 for (i = 1; i < argc; i++)
 {
-for (j = 0; j < strlen(argv[i][j]); j++)
+for (j = 0; argv[i][j] != '\0'; j++)
 {
 if (atoi(argv[i][j]) >= 0 && atoi(argv[i][j]) <= 9)
 {
-sum += atoi(argv[i];
+sum += atoi(argv[i]);
 printf("%d\n", sum);
 return (1);
 }

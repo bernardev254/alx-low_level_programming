@@ -3,7 +3,7 @@
 /**
  * main - prints the number of arguments passed to it.
  * @argc: arguments count
- *@argv:arguments vector 
+ *@argv:arguments vector
  *
  * Return: On success 0.
  */

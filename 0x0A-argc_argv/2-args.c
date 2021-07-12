@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - prints all arguments it receives
@@ -12,7 +13,6 @@ void main(int argc, char **argv)
 int i;
 for (i = 0; i < argc; i++)
 {
-_putchar(argv[i]);
-_putchar('\n');
+printf("%s\n", argv[i]);
 }
 }

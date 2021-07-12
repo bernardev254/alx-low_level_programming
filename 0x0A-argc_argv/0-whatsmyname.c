@@ -9,7 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-char *s = argv;
+char *s = *argv;
 while (*s != '\0' && argc > 0)
 {
 _putchar(*s);

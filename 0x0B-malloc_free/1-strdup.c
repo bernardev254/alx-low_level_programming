@@ -10,19 +10,18 @@
 
 char *_strdup(char *str)
 {
-unsigned int i;
 char *ar;
 {
-if (size == 0)
+if (*str == NULL)
 return (NULL);
-ar = malloc(size * sizeof(char));
+ar = malloc(sizeof(char *str));
 if (ar == NULL)
 {
 fprintf(stderr, "failled to allocate memory\n");
 return (ar);
 }
-for (i = 0; i < size; i++)
-ar[i] = c;
+while (*str != '\0')
+ar++ = str++
 }
 return (ar);
 }

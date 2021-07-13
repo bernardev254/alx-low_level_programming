@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
 *create_array - creates an array.
 *@size: int.
@@ -15,7 +16,7 @@ char *create_array(unsigned int size, char c)
   {
     ar = malloc(size * sizeof(char));
     if (ar == NULL)
-      fprintf("strderr,failled to allocate memory\n")
+      fprintf(strderr,"failled to allocate memory\n")
     for (i = 0; i < size; i++)
       ar[i] = c;
   }

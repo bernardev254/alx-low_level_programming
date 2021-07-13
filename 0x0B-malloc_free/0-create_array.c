@@ -20,7 +20,7 @@ ar = malloc(size * sizeof(char));
 if (ar == NULL)
 {
 fprintf(stderr, "failled to allocate memory\n");
-return (1);
+return (ar);
 }
 for (i = 0; i < size; i++)
 ar[i] = c;

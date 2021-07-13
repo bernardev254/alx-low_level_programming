@@ -18,9 +18,9 @@ if (size == 0)
 return (NULL);
 ar = malloc(size * sizeof(char));
 if (ar == NULL)
-fprintf(stderr,"failled to allocate memory\n");
+fprintf(stderr, "failled to allocate memory\n");
 for (i = 0; i < size; i++)
 ar[i] = c;
 }
 return (ar);
-}  
+}

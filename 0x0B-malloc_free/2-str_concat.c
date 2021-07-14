@@ -35,7 +35,7 @@ i++;
 }
 while (j < len2)
 {
-ar[j] = s2[j];
+ar[i] = s2[j];
 j++;
 }
 ar[j + 1] = '\0';

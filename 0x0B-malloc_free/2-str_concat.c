@@ -3,26 +3,33 @@
 #include <stdio.h>
 #include <string.h>
 /**
-*_strdup - duplicates a string.
-*@str: string.
+*str_concat - duplicates a string.
+*@s1: string.
+*@s2: string
 *
-*Return: pointer to string duplicate
+*Return: pointer to string concatenated
 */
 
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
 char *ar;
-int len;
+int len, len2;
 {
-if (str == NULL)
+if (s1 == NULL && s2 == NULL)
 return (NULL);
-len = strlen(str) + 1;
-ar = (char *)malloc(sizeof(char) * len);
+len = strlen(s1);
+len2 = str(s2);
+ar = (char *)malloc((sizeof(char) * len) + (sizeof(char) * len2) + (sizeof(char));
 if (ar == NULL)
 {
 fprintf(stderr, "failled to allocate memory\n");
+return (NULL);
+}
+while (*s2 != '\0')
+{
+*(s1 + len)++ = *s2++;
+*ar = s1;
+*ar++ = '\0';
+}
 return (ar);
-}
-}
-return (memcpy(ar, str, len));
 }

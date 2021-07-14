@@ -23,6 +23,7 @@ if (ar == NULL)
 fprintf(stderr, "failled to allocate memory\n");
 return (ar);
 }
+}
 /**
 while (*str != '\0')
 *ar++ = *str++;

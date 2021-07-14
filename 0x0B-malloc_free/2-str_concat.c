@@ -30,6 +30,6 @@ if (ar == NULL)
 fprintf(stderr, "failled to allocate memory\n");
 return (NULL);
 }
-ar = strcat(s1,s2);
+ar = strcat(s1, s2);
 return (ar);
 }

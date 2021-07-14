@@ -27,5 +27,5 @@ while (*str != '\0')
 *ar++ = *str++;
 }
 ar[strlen(str)] = '\0';
-return (memcpy(ar, str, len);
+return (memcpy(ar, str, len));
 }

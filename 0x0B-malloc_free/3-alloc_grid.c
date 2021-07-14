@@ -16,9 +16,9 @@ int **arrr = NULL, *arr = NULL;
 int i, j;
 if (width <= 0 || height <= 0)
 return (NULL);
-arrr = malloc((sizeof(int*) * height)+(sizeof(int) * height * width));
+arrr = malloc((sizeof(int *) * height) + (sizeof(int) * height * width));
 if (arrr != NULL)
-for (i = 0;i < height; i++)
+for (i = 0; i < height; i++)
 {
 arrr[i] = arr + (i * width);
 for (j = 0; j < width; j++)

@@ -33,11 +33,13 @@ while (i < len)
 ar[i] = s1[i];
 i++;
 }
+ar[i] = s1[i];
 while (j <= len2)
 {
 ar[i] = s2[j];
 i++;
 j++;
 }
+ar[i] =s2[i];
 return (ar);
 }

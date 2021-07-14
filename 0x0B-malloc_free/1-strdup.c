@@ -14,7 +14,7 @@ char *ar;
 {
 if (str == NULL)
 return (NULL);
-ar = malloc(sizeof(char *) + 1);
+ar = malloc(sizeof(char *) + 10);
 if (ar == NULL)
 {
 fprintf(stderr, "failled to allocate memory\n");

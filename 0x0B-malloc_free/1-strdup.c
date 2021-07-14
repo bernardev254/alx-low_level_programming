@@ -15,7 +15,8 @@ char *ar;
 {
 if (str == NULL)
 return (NULL);
-ar = (char *)malloc(sizeof(char) * (strlen(str) + 1));
+len = strlen(str) + 1;
+ar = (char *)malloc(sizeof(char) * len);
 if (ar == NULL)
 {
 fprintf(stderr, "failled to allocate memory\n");
@@ -25,5 +26,5 @@ while (*str != '\0')
 *ar++ = *str++;
 }
 ar[strlen(str)] = '\0';
-return (ar);
+return (memcpy(ar, str, len);
 }

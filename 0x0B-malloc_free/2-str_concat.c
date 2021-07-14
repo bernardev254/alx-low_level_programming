@@ -30,11 +30,7 @@ if (ar == NULL)
 fprintf(stderr, "failled to allocate memory\n");
 return (NULL);
 }
-while (*s2 != '\0')
-{
-*s1++ = *s2++;
-ar = s1;
-*ar++ = '\0';
+ar = strcat(s1,s2);
 }
 return (ar);
 }

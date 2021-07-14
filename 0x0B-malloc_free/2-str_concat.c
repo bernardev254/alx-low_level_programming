@@ -18,7 +18,7 @@ int len, len2;
 if (s1 == NULL && s2 == NULL)
 return (NULL);
 len = strlen(s1);
-len2 = str(s2);
+len2 = strlen(s2);
 ar = (char *)malloc((sizeof(char) * len) + (sizeof(char) * len2) + (sizeof(char));
 if (ar == NULL)
 {

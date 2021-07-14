@@ -23,9 +23,11 @@ if (ar == NULL)
 fprintf(stderr, "failled to allocate memory\n");
 return (ar);
 }
+/**
 while (*str != '\0')
 *ar++ = *str++;
 }
 ar[strlen(str)] = '\0';
+*/
 return (memcpy(ar, str, len));
 }

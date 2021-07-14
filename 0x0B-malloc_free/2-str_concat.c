@@ -33,12 +33,11 @@ while (i < len)
 ar[i] = s1[i];
 i++;
 }
-while (j < len2)
+while (j <= len2)
 {
 ar[i] = s2[j];
 i++;
 j++;
 }
-ar[j + 1] = '\0';
 return (ar);
 }

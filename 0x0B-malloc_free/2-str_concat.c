@@ -37,5 +37,6 @@ while(j <= len2)
 ar[j] = s2[j];
 j++;
 }
+}
 return (ar);
 }

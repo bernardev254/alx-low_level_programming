@@ -25,12 +25,12 @@ while (s1[len] != '\0')
 {
 len++;
 }
-while (s2[len2] !='\0')
+while (s2[len2] != '\0')
 {
 len2++;
 }
 len2++;
-ar = malloc(sizeof(*s1) * (len2 + len)+sizeof(char));
+ar = malloc(sizeof(*s1) * (len2 + len));
 if (ar == NULL)
 {
 fprintf(stderr, "failled to allocate memory\n");

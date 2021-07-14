@@ -28,16 +28,16 @@ if (ar == NULL)
 fprintf(stderr, "failled to allocate memory\n");
 return (NULL);
 }
-while(i < len)
+while (i < len)
 {
 ar[i] = s1[i];
 i++;
 }
-while(j < len2)
+while (j < len2)
 {
 ar[j] = s2[j];
 j++;
 }
-ar[j+1] = '\0';
+ar[j + 1] = '\0';
 return (ar);
 }

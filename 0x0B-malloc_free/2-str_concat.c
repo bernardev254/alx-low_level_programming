@@ -18,7 +18,7 @@ len = strlen(s1);
 len2 = strlen(s2);
 if (s1 == NULL && s2 == NULL)
 return (NULL);
-ar = malloc((sizeof(char) * len) + (sizeof(char) * len2) + (sizeof(char)));
+ar = malloc((sizeof(char) * len)+(sizeof(char) * len2)+(sizeof(char)));
 if (ar == NULL)
 {
 fprintf(stderr, "failled to allocate memory\n");

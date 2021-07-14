@@ -30,7 +30,7 @@ return (NULL);
 }
 while(i < len)
 {
-ar[i] = as1[i];
+ar[i] = s1[i];
 i++;
 }
 while(j <= len1)

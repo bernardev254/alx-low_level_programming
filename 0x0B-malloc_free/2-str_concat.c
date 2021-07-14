@@ -48,6 +48,6 @@ ar[i] = s2[j];
 i++;
 j++;
 }
-ar[i] =s2[i];
+ar[i] = s2[i];
 return (ar);
 }

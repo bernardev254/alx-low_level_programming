@@ -4,7 +4,7 @@
 #include "holberton.h"
 
 /**
- *str_nconcat - concatenates two strings.
+ *string_nconcat - concatenates two strings.
  *@s1: pointer to string
  *@s2: pointer to string.
  *@n:no of bytes of s2 to concatenate
@@ -24,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	ptr = malloc(sizeof(s1) + sizeof(s2) - sizeof(char));
+	ptr = malloc(sizeof(*s1) * (strlen(s1) + n));
 	if (ptr == NULL)
 	{
 		return (NULL);

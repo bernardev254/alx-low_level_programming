@@ -5,34 +5,28 @@
 
 /**
  * main - sum of arguments
- * @argc: arguments count
- *@argv:arguments vector
+ * @argc: no of argument.
+ * @argv:arguments vector.
  *
- * Return: On success 0.
+ *Return: sum of arguments.
  */
+
 int main(int argc, char **argv)
 {
-int sum = 0;
-int i, j;
-if (argc > 1)
+int result = 0;
+if (argc <= 1)
 {
-for (i = 1; i < argc; i++)
+printf("0\n");
+}
+else if (!(isdigit((**argv++)++)))
 {
-for (j = 0; argv[i][j] != '\0'; j++)
-{
-if (isdigit(argv[i][j]))
-{
-sum += atoi(argv[i]);
-printf("%d\n", sum);
+printf("Error\n");
 return (1);
 }
 else
 {
-printf("Error\n");
+result += atoi(*argv++);
 }
-}
-}
-}
-printf("0\n");
 return (0);
 }
+

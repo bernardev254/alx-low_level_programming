@@ -35,7 +35,7 @@ char *str_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		while (*s2++ != *(s2 + (n - 1)))
+		while (*s2 != *(s2 + (n - 1)))
 			*s1++ = *s2++;
 	}
 	*ptr++ = *s1++;

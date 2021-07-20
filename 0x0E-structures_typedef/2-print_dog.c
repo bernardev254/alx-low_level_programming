@@ -5,7 +5,6 @@
 /**
  * print_dog - prints contents of dog structure
  * @d:pointer to structure variable.
- * @NULL:null
  *
  * Return:void
  */

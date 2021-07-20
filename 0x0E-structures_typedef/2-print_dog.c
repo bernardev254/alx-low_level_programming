@@ -21,12 +21,6 @@ if (d->name == NULL)
 {
 d->name = "(nil)";
 }
-/**
- *if (d->age == (float )NULL)
- *{
- *d->age = atoi("(nil)");
- *}
- */
 if (d->owner == NULL)
 {
 d->owner = "(nil)";

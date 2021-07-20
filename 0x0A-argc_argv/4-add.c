@@ -18,8 +18,9 @@ if (argc <= 1)
 {
 printf("0\n");
 }
-else if (!(isdigit((**argv++)++)))
+else if (isalpha(*(*argv++)++))
 {
+break;
 printf("Error\n");
 return (1);
 }

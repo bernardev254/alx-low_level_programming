@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "function_pointers.h"
+
  /**
-  * array_iterator- take elems of an array as parameters
-  * @array:pointer to array
+  * array_iterator - take elems of an array as parameters
+  * @array: pointer to array
   * @size: size of the array
   * @action: function pointer
   * Return: void

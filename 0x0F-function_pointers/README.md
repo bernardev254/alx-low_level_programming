@@ -1,1 +1,1 @@
-This is a dir on **pointers to functions in *c language* **.
+This is a dir on **pointers to functions in ** *c language*.

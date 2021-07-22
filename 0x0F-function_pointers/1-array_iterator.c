@@ -9,11 +9,11 @@
   * Return: void
   */
 
-void (int *array, size_t size, void(*action)(int))
+void array_iterator(int *array, size_t size, void(*action)(int))
 {
-	int i = 0;
+	long unsigned int i = 0;
 
 	for (; i < size; i++)
-		action(*array[i]);
+		action(array[i]);
 }
 

@@ -40,7 +40,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div: returns div of an int.
+ * op_div - returns div of an int.
  * @a: int
  * @b: int
  *

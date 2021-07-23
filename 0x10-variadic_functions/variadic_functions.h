@@ -2,10 +2,10 @@
 #define _VARIADIC_FUNCTIONS_H
 #include <stdarg.h>
 /**
-* struct_op - structure
-*@ch: type
-*@f: function
-*/
+ *struct_op - structure
+ *@ch: type
+ *@f: function
+ */
 typedef struct op
 {
   char *ch;

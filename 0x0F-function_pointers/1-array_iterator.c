@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include "function_pointers.h"
 
-
  /**
   * array_iterator - take elems of an array as parameters
   * @array: pointer to array

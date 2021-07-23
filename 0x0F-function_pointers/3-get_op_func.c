@@ -1,25 +1,35 @@
 #include <stdio.h>
 #include <stddef.h>
+#include <string.h>
 #include <stdlib.h>
-#include "function_pointers.h"
+#include "3-calc.h"
 
 /**
- * int_index - searches for an int.
- * @array: pointer to array
- * @size: size of array
- * @cmp: function for comparing
+ * get_op_func - selects the operator.
+ * @s: operator.
+ * @
  *
  * Return: int
  */
-int int_index(int *array, int size, int (*cmp)(int))
+int (*get_op_func(char *s))(int, int)
 {
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
 	int i = 0;
 
-	if (!array || !cmp || size <= 0)
-		return (-1);
-	for (; i < size; i++)
-		if (cmp(array[i]) > 0)
-			return (i);
-	return (-1);
+	while (ops[i].op != NULL)
+	{
+		if (strcmp(s, ops[i].op) == 0)
+				break;
+
+		i++;
+	}
+	return (ops[i].f);
 }
 

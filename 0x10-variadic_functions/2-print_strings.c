@@ -9,6 +9,8 @@
  *
  *Return:void
  */
+void print_strings(const char *separator, const unsigned int n, ...)
+{
 unsigned int i;
 char *str;
 va_list ap;
@@ -20,7 +22,7 @@ if (!str)
 str = "(nil)";
 if (!separator)
 printf("%s", str);
-else if (separator ==0 && i ==0)
+else if (separator == 0 && i == 0)
 printf("%s%s", separator, str);
 }
 printf("\n");

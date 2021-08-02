@@ -2,13 +2,13 @@
 #include "lists.h"
 
 /**
- * print_list - prints elem of list_t list
+ * list_len - returns no of elem of list_t list
  * @h: list_t list
  *
- * Return: no of nodes
+ * Return: elements of linked list_t list
  */
 
-size_t print_list(const list_t *h)
+size_t list_len(const list_t *h)
 {
 	unsigned long int count = 0;
 

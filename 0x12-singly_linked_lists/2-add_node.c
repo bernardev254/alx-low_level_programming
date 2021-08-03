@@ -13,13 +13,13 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t first;
+	list_t *first;
 	unsigned int len = 0;
 
 	while (str[len])
 		len++;
 
-	first = malloc(sizeof(list_t));
+	first = (list_t *)malloc(sizeof(list_t));
 	if (!first)
 		return (NULL);
 
@@ -28,6 +28,6 @@ list_t *add_node(list_t **head, const char *str)
 	first->next = (*head);
 	(*head) = first;
 
-	return (head);
+	return (*head);
 }
 

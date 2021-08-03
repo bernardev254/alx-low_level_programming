@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "list.h"
+#include "lists.h"
 /**
  *frees_list - frees list_t
  *@head:pointer to first node

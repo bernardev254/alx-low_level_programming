@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+void first(void) __attribute__((constructor));
 /**
  * first - prints before main execution
  *

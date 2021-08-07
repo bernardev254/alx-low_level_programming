@@ -6,7 +6,7 @@
  *
  *Return:void
  */
-void free_listint2(listint_t *head)
+void free_listint2(listint_t **head)
 {
 	listint_t *ptr;
 
@@ -14,6 +14,6 @@ void free_listint2(listint_t *head)
 	{
 		ptr = head->next;
 		free(head);
-		hesd = ptr;
+		head = ptr;
 	}
 }

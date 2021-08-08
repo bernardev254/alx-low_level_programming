@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 #include "dog.h"
 
 /**
@@ -18,7 +19,7 @@ free(d);
 d->name = name;
 d->age = age;
 d->owner = owner;
-d->name = name;
-d->owner = owner;
+strcpy(d->name, name);
+strcpy(d->owner, owner);
 return (d);
 }

@@ -18,12 +18,16 @@ if (d == NULL)
 free(d);
 d->name = malloc(sizeof(char) * (strlen(name) + 1));
 if (!d->name)
+{
 free(d);
+return (NULL);
+}
 d->owner = malloc(sizeof(char) * (strlen(owner) + 1));
 if (!d->owner)
 {
 free(d);
 free(d->name);
+return (NULL);
 }
 free(d->owner);
 strcpy(d->name, name);

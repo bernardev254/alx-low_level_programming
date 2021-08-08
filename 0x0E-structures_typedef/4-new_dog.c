@@ -21,7 +21,7 @@ if (!d->name)
 free(d->name);
 d->owner = malloc(sizeof(char) * (strlen(owner) + 1));
 if (!d->owner)
-free(d->owner;
+free(d->owner);
 d->name = name;
 d->age = age;
 d->owner = owner;

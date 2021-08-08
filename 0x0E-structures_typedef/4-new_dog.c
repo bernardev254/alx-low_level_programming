@@ -28,5 +28,6 @@ free(d->name);
 free(d->owner);
 strcpy(d->name, name);
 strcpy(d->owner, owner);
+d->age = age;
 return (d);
 }

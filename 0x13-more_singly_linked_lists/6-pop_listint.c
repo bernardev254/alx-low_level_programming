@@ -9,7 +9,7 @@
  */
 int pop_listint(listint_t **head)
 {
-	listint_t ptr;
+	listint_t *ptr;
 	int num;
 
 	if (!head || !*head)

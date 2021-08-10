@@ -1,3 +1,7 @@
+#include <stdlib.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -7,7 +11,6 @@
  *
  * Return: number of char printed or 0 on failure
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;

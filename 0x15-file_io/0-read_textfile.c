@@ -1,8 +1,3 @@
-#include <stdlib.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <unistd.h>
 #include "main.h"
 
 /**
@@ -22,14 +17,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!filename)
 		return (0);
 	fd = open(filename, O_RDONLY);
-	if (fd == -1)
+	if (fd < 0)
 		return (0);
 	buf = malloc(sizeof(char) * letters);
 	if (!buf)
 		return (0);
 
 	r =  read(fd, buf, letters);
-	if (r == -1)
+	if (r < 0)
 	{
 		free(buf);
 		return (0);

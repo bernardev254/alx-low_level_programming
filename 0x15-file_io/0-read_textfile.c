@@ -7,11 +7,10 @@
 
 /**
  * read_textfile - read a file and prints it to stdout
- * @filename: pointer to string to be written
- * @letters: actual number of char written
+ * @filename: name of file to be read
+ * @letters: actual number of char to read and print
  *
- * Return: number of char read
- * or 0,on failure
+ * Return: number of char printed or 0 on failure
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)

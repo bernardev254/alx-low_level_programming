@@ -5,16 +5,18 @@
 #include "main.h"
 
 /**
- * read_textfile - read a file and prints it to stdout
- * @filename: name of file to be read
- * @letters: actual number of char to read and print
+ * read_textfile - read a text file and prints
+ * it to POSIT stdout
+ * @filename: pointer to name of file to be read
+ * @letters: number of bytes the func can read
+ * and print.0 on failure
  *
  * Return: number of char printed or 0 on failure
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	int r, w;
+	ssize_t r, w;
 	char *buf;
 
 	if (!filename)

@@ -2,7 +2,7 @@
 
 /**
  * read_textfile - read a text file and prints
- * it to POSIT stdout
+ * it to stardard output
  * @filename: pointer to name of file to be read
  * @letters: number of bytes the func can read
  * and print.0 on failure
@@ -17,6 +17,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (!filename)
 		return (0);
+	
 	fd = open(filename, O_RDONLY);
 	if (fd < 0)
 		return (0);

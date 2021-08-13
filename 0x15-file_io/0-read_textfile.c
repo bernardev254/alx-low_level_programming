@@ -1,4 +1,5 @@
 #include "main.h"
+#include "holberton.h"
 
 /**
  * read_textfile - read a text file and prints
@@ -41,7 +42,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	free(buf);	
+	free(buf);
 	return (w);
 }
 

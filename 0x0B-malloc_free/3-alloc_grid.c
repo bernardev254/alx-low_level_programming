@@ -1,8 +1,7 @@
 #include "main.h"
 #include "holberton.h"
 #include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+
 /**
 *alloc_grid - returns a pointer to 2d array
 *@width:array width
@@ -13,20 +12,35 @@
 
 int **alloc_grid(int width, int height)
 {
-int **arrr = NULL, *arr = NULL;
-int i, j;
-if (width <= 0 || height <= 0)
-return (NULL);
-arrr = malloc((sizeof(int *) * height) + (sizeof(int) * height * width));
-arr = (int *)(arrr + height);
-if (arrr != NULL)
-for (i = 0; i < height; i++)
-{
-arrr[i] = arr + (i * width);
-for (j = 0; j < width; j++)
-arrr[i][j] = 0;
+	int **arr;
+	int i, j;
+
+	if (width <= 0 || height <= 0)
+		return (NULL);
+
+	arr = (int **) malloc(sizeof(int *) * height);
+
+	if (arr == NULL)
+		return (NULL);
+
+	for (i = 0; i < height; i++)
+	{
+		arr[i] = (int *) malloc(sizeof(int) * width);
+		if (arr[i] == NULL)
+		{
+			free(arr);
+			for (j = 0; j <= i; j++)
+				free(arr[j]);
+			return (NULL);
+		}
+	}
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
+		{
+			arr[i][j] = 0;
+		}
+	}
+	return (arr);
 }
-else
-return (free(arrr), NULL);
-return (arrr);
-}
+

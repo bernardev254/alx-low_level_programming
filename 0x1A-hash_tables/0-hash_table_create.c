@@ -16,7 +16,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 
 	new = malloc(sizeof(new));
- 	if (!new)
+	if (!new)
 	{
 		return (NULL);
 	}
@@ -28,5 +28,5 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 
 	return (new);
-}	
+}
 

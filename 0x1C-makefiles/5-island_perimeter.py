@@ -4,7 +4,7 @@ Module for island_perimeter() method
 """
 
 
-def recur(a, b, matrix, my_dict):
+def recur(a, b, matrix, my_dict, perimeter):
     steps = [
         (0, 1),
         (1, 0),
@@ -19,8 +19,10 @@ def recur(a, b, matrix, my_dict):
         neibour = matrix[new_a][new_b]
         key = '{}{}'.format(a, b)
         if neibour == 1 and not (key in my_dict):
-            recur(a, b, matrix, my_dict)
-
+            recur(a, b, matrix, my_dict, perimeter)
+        if neibour == 0:
+            perimeter += 1            
+    return perimeter
 
 def outside_grid(a, b, matrix):
     if a < 0 or b < 0 or a > len(matrix) - 1 or b > len(matrix) - 1:
@@ -33,12 +35,11 @@ def island_perimeter(grid):
     Computers the length of the perimeter of an island.
     """
     in_island = {}
-    ret = 0
+    perimeter = 0
     for x, row in enumerate(grid):
         for y, cell in enumerate(row):
             if cell == 1:
-                ret += 1
                 in_island['{}{}'.format(x, y)] = 'True'
-                recur(x, y, grid, in_island)
+                perimeter = recur(x, y, grid, in_island, perimeter)
 
-    return len(in_island) * 2 + 2
+    return perimeter

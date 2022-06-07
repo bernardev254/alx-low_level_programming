@@ -18,11 +18,12 @@ def recur(a, b, matrix, my_dict, perimeter):
             continue
         neibour = matrix[new_a][new_b]
         key = '{}{}'.format(a, b)
+        if neibour != 1:
+            perimeter += 1
         if neibour == 1 and not (key in my_dict):
             recur(a, b, matrix, my_dict, perimeter)
-        if neibour == 0:
-            perimeter += 1            
     return perimeter
+
 
 def outside_grid(a, b, matrix):
     if a < 0 or b < 0 or a > len(matrix) - 1 or b > len(matrix) - 1:

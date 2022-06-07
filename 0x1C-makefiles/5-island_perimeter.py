@@ -14,14 +14,16 @@ def recur(a, b, matrix, my_dict, perimeter):
     for (ax, bx) in steps:
         new_a = ax + a
         new_b = bx + b
+        key = '{}{}'.format(new_a, new_b)
         if outside_grid(new_a, new_b, matrix):
             continue
         neibour = matrix[new_a][new_b]
-        key = '{}{}'.format(a, b)
         if neibour != 1:
             perimeter += 1
         if neibour == 1 and not (key in my_dict):
-            recur(a, b, matrix, my_dict, perimeter)
+            my_dict[key] = 'True'
+            perimeter += recur(new_a, new_b, matrix, my_dict, perimeter)
+
     return perimeter
 
 
